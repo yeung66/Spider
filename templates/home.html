@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>段子</title>
+</head>
+<body>
+{% load pagination_tags %}
+{% autopaginate d 30 %}
+{% for i in d %}
+<p>{{ i }}</p>
+{% endfor %}
+
+
+{% paginate %}
+</body>
+</html>
